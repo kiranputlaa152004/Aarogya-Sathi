@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aarogya Sathi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Aarogya Sathi</h1>
+<p>Your Community Health Companion</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#bmi">BMI Calculator</a>
+<a href="#hospitals">Hospitals</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+<h2>Welcome</h2>
+<p>A platform that helps people access health information and emergency services.</p>
+
+<button onclick="healthTip()">Get Health Tip</button>
+<button onclick="emergency()">Emergency Call</button>
+</section>
+
+<section id="services">
+
+<h2>Health Services</h2>
+
+<div class="card">
+<h3>Health Awareness</h3>
+<p>Learn about diseases and prevention methods.</p>
+</div>
+
+<div class="card">
+<h3>Nearby Hospitals</h3>
+<p>Find hospitals and clinics near your location.</p>
+</div>
+
+<div class="card">
+<h3>Emergency Help</h3>
+<p>Quick access to ambulance and emergency numbers.</p>
+</div>
+
+</section>
+
+<section id="bmi">
+
+<h2>BMI Calculator</h2>
+
+<input type="number" id="weight" placeholder="Enter Weight (kg)">
+<input type="number" id="height" placeholder="Enter Height (cm)">
+
+<button onclick="calculateBMI()">Calculate BMI</button>
+
+<h3 id="result"></h3>
+
+</section>
+
+<section id="hospitals">
+
+<h2>Search Nearby Hospitals</h2>
+
+<input type="text" id="searchHospital" placeholder="Search hospital name">
+<button onclick="searchHospital()">Search</button>
+
+<ul id="hospitalList">
+<li>City Care Hospital</li>
+<li>LifeLine Medical Center</li>
+<li>Sunrise Health Clinic</li>
+<li>Community Health Hospital</li>
+</ul>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form onsubmit="submitForm(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Aarogya Sathi</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
